@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url('https://healthcare-in-europe.com/media/story_section_image/4482/image-01-shutterstock-116229451.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+    <body>
+
+        <center>
+
+        <h1> HEART DISEASE PREDICTION	 </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+          
+             
+           <b> 
+	      male              :   <input type="text" placeholder="Male  (0/1)" name='male' required><br></br>
+	      age               :   <input type="text" placeholder="Age", name='age' required><br></br>
+    	      Current Smoker    :   <input type="text" placeholder="Current Smoker  (0/1)" name='currentsmoker' required><br></br>
+              Cigarette Per Day :   <input type="text" placeholder="Cigarette Per Day" name='cigaretteperday' required><br></br>
+              BPMeds            :   <input type="text" placeholder="BPMeds  (0/1)" name='bpmeds' required><br></br>
+              Prevalant Stroke  :   <input type="text" placeholder="Prevalant Stroke  (0/1)" name='prevalantstroke' required><br></br>
+              Prevalent Hyp     :   <input type="text" placeholder="Prevalent Hyp  (0/1)" name='prevalenthyp' required><br></br>
+              Diabetes          :   <input type="text" placeholder="Diabetes  (0/1)" name='diabetes' required><br></br>
+              Totchol           :   <input type="text" placeholder="Totchol" name='totchol' required><br></br>
+              Sys BP            :   <input type="text" placeholder="Sys BP" name='sysbp' required><br></br>
+              Dia BP            :   <input type="text" placeholder="Dia BP" name='diabp' required><br></br>
+              BMI               :   <input type="text" placeholder="BMI" name='bmi' required><br></br>
+              Heart Rate        :   <input type="text" placeholder="Heart Rate" name='heartrate' required><br></br></b>
+                <input type="submit" , value='predict!' >
+                
+         </form>    
+        <h3>Note* : select '0' for NO and select '1' for YES</h3>
+       </center>
+
+    </body>
+</html>
